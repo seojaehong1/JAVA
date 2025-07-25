@@ -1,0 +1,33 @@
+
+public class Ex002 {
+	public static void main(String[] args) {
+		
+		boolean stop = false;
+		if (!stop) {
+			System.out.println("멈췄다");
+		} else {
+			System.out.println("출발");
+		}
+		float var3 = 5e-3f;
+		float var4 = 5e-3f;
+		double var2 = 5e-3;
+		System.out.println(var2);
+		String str = "우리는 \"개발자\" 입니다.";
+		System.out.println(str);
+		int var1 = '\uac00';
+		System.out.println(var1);
+		int x1 = 10;
+		int x2 = 010;
+		int x3 = 0x10;
+		System.out.println(x1);
+		System.out.println(x2);
+		System.out.println(x3);
+		
+		
+		if (true) {
+			int v1 = 100;
+			v1 = 400;
+		}
+		
+	}
+}

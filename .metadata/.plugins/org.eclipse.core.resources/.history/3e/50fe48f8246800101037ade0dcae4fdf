@@ -1,0 +1,12 @@
+package third;
+
+public class ArrayTest2 {
+
+	public static void main(String[] args) {
+	
+		int[] x = new int[3];
+		String names[] = new String[5];
+
+	}
+
+}

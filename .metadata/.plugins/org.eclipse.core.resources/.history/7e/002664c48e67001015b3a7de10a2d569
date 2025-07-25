@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ArrayTest {
+
+	
+	public static void main(String[] args) {
+		
+		
+		int score[] = new int[7];
+		Scanner sc = new Scanner(System.in);
+		int i =0;
+		String inputData1;
+		do {
+			System.out.println(i+1+"번째 점수 입력");
+			inputData1 = sc.nextLine();
+			score[i] = Integer.parseInt(inputData1);
+		} while (inputData1 != null);
+		int sum = 0;
+		double avg;
+		
+		/*
+		
+		avg = (double)sum/score.length;
+		System.out.println("총점은 " + sum + "입니다.\n" + "평균은 "+ avg +"입니다.");
+		*/
+	}
+
+}

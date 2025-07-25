@@ -1,0 +1,12 @@
+
+public class PrimitiveAndStringConversionExample {
+	public static void main(String[] args) {
+		int value = Integer.parseInt("10");
+		double value1 = Double.parseDouble("3.14");
+		boolean value2 =Boolean.parseBoolean("true");
+		
+		System.out.println(value + 10);
+		System.out.println(value2);
+		
+	}
+}

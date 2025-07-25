@@ -1,0 +1,29 @@
+package _20250725;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import com.mysql.cj.protocol.Resultset;
+
+public class Quiz1 {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+	
+		Quiz1 scan = 
+		
+		System.out.println("sql문입력");
+		String sqlString = sc.nextLine();
+		
+		/*	try {
+			Class.forName("com.mysql.cj.jdbc");
+			System.out.println("클래스 있다.");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("클래스 없다.");
+		} */
+		
+	}
+
+}

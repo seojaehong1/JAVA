@@ -1,0 +1,60 @@
+package _20250724;
+
+import java.util.Scanner;
+
+public class Exam06 {
+	public static void main(String[] args) {
+		boolean run = true;
+		boolean x = true;
+		int studentnum =0;
+		int[] scores = null;
+		int k=0;
+		Scanner sc = new Scanner(System.in);
+		int i=0;
+		int a=0;
+		while(run) {
+			System.out.println("-------------");
+			System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
+			System.out.println("-------------");
+			System.out.println("선택>");
+			int selectNum = Integer.parseInt(sc.nextLine());
+			
+			if(selectNum == 1) {
+				System.out.print("학생수>");
+				studentnum = Integer.parseInt(sc.nextLine());
+				scores = new int[studentnum];
+			} else if(selectNum ==2) {
+				System.out.println("점수입력");
+				for (int i1=0; i1 < scores.length; i1++) {
+					System.out.printf("scores[%d]>",i1);
+					scores[i1] = Integer.parseInt(sc.nextLine());
+				}
+//				while(x) {
+//					System.out.printf("scores[%d]\n",i);
+//					scores[i] = Integer.parseInt(sc.nextLine());
+//					i++;
+//					System.out.printf("score[%d]>",i);
+//					if (scores[i]==0) {
+//						x = false;
+//					}
+//				}
+			} else if(selectNum == 3) {
+				for(int j=0; j<scores.length; j++ ) {
+					System.out.printf("score[%d]> %d\n",j,scores[j]);
+				}
+			} else if(selectNum == 4) {
+				for(int j=0; j<scores.length; j++) {
+					a += scores[j];
+					if (k<scores[j]) {
+						k=scores[j];
+					}
+				} 
+				System.out.printf("최고점수: %d",k);
+				System.out.printf("\n평균점수 %d\n", a/scores.length);
+			} else if(selectNum ==5) {
+				run =false;
+			}
+		}
+		System.out.println("프로그램 종료");
+	}
+}

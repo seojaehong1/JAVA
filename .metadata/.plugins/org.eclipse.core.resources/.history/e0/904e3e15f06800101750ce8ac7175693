@@ -1,0 +1,65 @@
+package _20250724;
+
+import java.util.Scanner;
+
+public class ww {
+	public static void main(String[] args) {
+		String name = "서재홍";
+		String account = "wtme3";
+		String pwd = "rr@020309";
+		boolean run = true;
+		boolean login = true;
+		int balance = 0;
+		int total=0;
+		Scanner sc = new Scanner(System.in);
+		
+		while(login) {
+			System.out.println("--------------------");
+			System.out.println("로그인");
+			System.out.println("이름");
+			String str = sc.nextLine();
+			System.out.println("아이디");
+			String str1 = sc.nextLine();
+			System.out.println("비밀번호");
+			String str2 = sc.nextLine();
+			
+			if(str.equals(name)) {
+				if(str1.equals(account))
+					if(str.equals(pwd)) {
+						login = true;
+						System.out.println("로그인 성공");
+						while(run) {
+							
+							System.out.println("\n\n--------------------");
+							System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
+							System.out.println("--------------------");
+							System.out.println("선택");
+							int count = Integer.parseInt(sc.nextLine());
+							if(count==1) {
+								System.out.println("예금");
+								total+= Integer.parseInt(sc.nextLine());
+								System.out.println("총금액" + total);
+							} else if(count==2) {
+								System.out.println("출금");
+								total-= Integer.parseInt(sc.nextLine());
+								System.out.println("총금액"+total);
+							} else if(count==3) {
+								System.out.println("잔고");
+								System.out.println(total);
+							
+							} else if(count==4) {
+							System.out.println("종료");
+							run = false;
+					}
+						System.out.println();
+
+				} 
+					}
+				} 
+			}
+		
+		}
+		
+} 
+
+

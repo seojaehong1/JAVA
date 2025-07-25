@@ -1,0 +1,127 @@
+package sec.swing;
+
+import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+
+class MyFrame1 extends JFrame implements ActionListener {
+	JButton jb1;
+	JButton jb2;
+	JButton jb3;
+	JButton jb4;
+	JButton jb5;
+	JButton jb6;
+	JTextField jt1;
+	JTextField jt2;
+	JTextField jt3;
+	JLabel lab1;
+	JLabel lab2;
+	JLabel lab3;
+	JLabel lab4;
+	JLabel lab5;
+	int balance = 0;
+	String name;
+	String account;
+	boolean login = false;	
+	
+	public MyFrame1() {  // 생성자
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container cp = this.getContentPane();
+		cp.setLayout(null);
+		
+		jb1 = new JButton("학생수");  // 버튼 생성
+		jb1.setBounds(10, 20, 70, 30);
+		cp.add(jb1);
+		
+		jb2 = new JButton("점수입력");  // 버튼 생성
+		jb2.setBounds(97, 20, 80, 30);
+		cp.add(jb2);
+		
+		jb3 = new JButton("점수리스트");  // 버튼 생성
+		jb3.setBounds(190, 20, 100, 30);
+		cp.add(jb3);
+		
+		
+		jb4 = new JButton("분석");  // 버튼 생성
+		jb4.setBounds(300, 20, 70, 30);
+		cp.add(jb4);
+		
+		jb5 = new JButton("종료");  // 버튼 생성
+		jb5.setBounds(390, 20, 70, 30);
+		cp.add(jb5);
+		
+		
+		jb6 = new JButton("확인");  // 버튼 생성
+		jb6.setBounds(10, 200, 70, 30);
+		cp.add(jb6);
+				
+		this.setVisible(true);
+		this.setSize(500, 300);
+		this.setLocation(800, 200);
+		this.setTitle("자바 스윙 1.0");
+		
+		jb1.addActionListener(this);
+		jb2.addActionListener(this);
+		jb3.addActionListener(this);
+		jb4.addActionListener(this);
+		jb5.addActionListener(this);
+		jb6.addActionListener(this);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == jb4) {
+			if (name.equals(jt2.getText()) && account.equals(jt3.getText())) {
+				JOptionPane.showMessageDialog(this, name+"님이 로그인했습니다.");
+				lab5.setText(name+"님 로그인 상태");
+				login = true;
+			}
+		}
+		if (e.getSource() == jb5) {
+			name = jt2.getText();
+			account = jt3.getText();
+			JOptionPane.showMessageDialog(this, name+"님이 회원 가입을 했습니다.");
+		}
+		
+		
+		if (!login) {
+			JOptionPane.showMessageDialog(this, "로그인 하세요!");
+			return;
+		}
+		
+		if (e.getSource() == jb1) {
+			int money = Integer.parseInt(jt1.getText());
+			balance += money;
+			lab2.setText("잔고: " + balance + "원");
+			jt1.setText("");
+		} else if (e.getSource() == jb2) {
+			int money = Integer.parseInt(jt1.getText());
+			balance -= money;
+			lab2.setText("잔고: " + balance + "원");
+			jt1.setText("");
+		}else if (e.getSource() == jb3) {
+//			JOptionPane.showInputDialog("이름 입력");
+//			JOptionPane.showMessageDialog(this, "연습");
+			int ret = JOptionPane.showConfirmDialog(this, "확인");
+			System.out.println(ret);
+		}
+		
+	}
+
+}
+
+public class hall {
+
+	public static void main(String[] args) {
+		new MyFrame1();
+
+	}
+
+}

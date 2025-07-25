@@ -1,0 +1,15 @@
+package _20250723;
+
+public class CastingExample {
+	public static void main(String[] args) {
+		
+		int intValue = 44032;
+		char charValue = (char) intValue;
+		
+		long longValue = 500l;
+		intValue = (int)longValue;
+		
+		double doubleValue = 3.14;
+		intValue = (int)doubleValue;
+	}
+}

@@ -1,0 +1,11 @@
+
+public class Ex003 {
+
+	public static void main(String[] args) {
+		long x = 200;
+		int y = 100;
+		y=(int)x;
+
+	}
+
+}

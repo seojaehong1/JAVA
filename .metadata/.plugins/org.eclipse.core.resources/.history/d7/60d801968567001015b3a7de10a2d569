@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ArrayTest {
+
+	
+	public static void main(String[] args) {
+		
+		int score[] = new int[3];
+		Scanner sc = new Scanner(System.in);
+		
+		
+		for (int i=0; i<3; i++) {
+			System.out.printf(i+"번째 점수 입력");
+			String inputData1 = sc.nextLine();
+			score[i] = Integer.parseInt(inputData1);
+		}
+	}
+
+}

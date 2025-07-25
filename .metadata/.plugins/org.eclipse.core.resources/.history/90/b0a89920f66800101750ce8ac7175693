@@ -1,0 +1,28 @@
+package _20250725;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class jdbcTest {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		String id = "spring5";
+		String pw = "spring5";
+		String url = "jdbc:mysql://locallhost:3305//spring5fs";
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		System.out.println("클래스 있다.");
+		Connection con = null;
+		
+		con = DriverManager.getConnection(url, id, pw);
+	/*	try {
+			Class.forName("com.mysql.cj.jdbc");
+			System.out.println("클래스 있다.");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("클래스 없다.");
+		} */
+		
+	}
+
+}

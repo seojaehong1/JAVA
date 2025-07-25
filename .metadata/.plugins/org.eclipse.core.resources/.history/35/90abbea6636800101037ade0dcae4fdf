@@ -1,0 +1,138 @@
+package sec.swing;
+
+import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Scanner;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+
+class MyFrame1 extends JFrame implements ActionListener {
+	JButton jb1;
+	JButton jb2;
+	JButton jb3;
+	JButton jb4;
+	JButton jb5;
+	JButton jb6;
+	JTextField jt1;
+	JTextField jt2;
+	JTextField jt3;
+	JTextField jt4;
+	JTextField jt5;
+	JLabel lab1;
+	JLabel lab2;
+	JLabel lab3;
+	JLabel lab4;
+	JLabel lab5;
+	String[] names;
+	int[] score;
+	String[] grade;
+	int count;
+	int balance = 0;
+	String name;
+	String account;
+	boolean login = false;	
+	
+	boolean run = true;
+	boolean x = true;
+	int studentnum =0;
+	int[] scores = null;
+	int k=0;
+	Scanner sc = new Scanner(System.in);
+	int i=0;
+	int a=0;
+	
+	public MyFrame1() {  // 생성자
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		Container cp = this.getContentPane();
+		cp.setLayout(null);
+		
+		jb1 = new JButton("학생수");  // 버튼 생성
+		jb1.setBounds(10, 20, 70, 30);
+		cp.add(jb1);
+		
+		jt1 = new JTextField();
+		jt1.setBounds(10, 50, 70, 30);
+		cp.add(jt1);
+		
+		jb2 = new JButton("점수입력");  // 버튼 생성
+		jb2.setBounds(85, 20, 90, 30);
+		cp.add(jb2);
+		
+		jt2 = new JTextField();
+		jt2.setBounds(85, 50, 70, 30);
+		cp.add(jt2);
+		
+		jb3 = new JButton("점수리스트");  // 버튼 생성
+		jb3.setBounds(190, 20, 100, 30);
+		cp.add(jb3);
+		
+		jt3 = new JTextField();
+		jt3.setBounds(190, 50, 100, 30);
+		cp.add(jt3);
+		
+		
+		jb4 = new JButton("분석");  // 버튼 생성
+		jb4.setBounds(300, 20, 70, 30);
+		cp.add(jb4);
+		
+		jt4 = new JTextField();
+		jt4.setBounds(300, 50, 70, 30);
+		cp.add(jt4);
+		
+		jb5 = new JButton("종료");  // 버튼 생성
+		jb5.setBounds(390, 20, 70, 30);
+		cp.add(jb5);
+		
+		jt2 = new JTextField();
+		jt2.setBounds(390, 50, 70, 30);
+		cp.add(jt2);
+		
+		
+		jb6 = new JButton("확인");  // 버튼 생성
+		jb6.setBounds(10, 200, 70, 30);
+		cp.add(jb6);
+				
+		this.setVisible(true);
+		this.setSize(500, 300);
+		this.setLocation(800, 200);
+		this.setTitle("자바 스윙 1.0");
+		
+		jb1.addActionListener(this);
+		jb2.addActionListener(this);
+		jb3.addActionListener(this);
+		jb4.addActionListener(this);
+		jb5.addActionListener(this);
+		jb6.addActionListener(this);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if (e.getSource() == jb1) {
+			studentnum = Integer.parseInt(jt1.getText());
+			scores = new int[studentnum];
+			JOptionPane.showMessageDialog(this, "학생수입력완료");
+		} else if(e.getSource()==jb2) {
+			for (int i1=0; i1 < scores.length; i1++) {
+				System.out.printf("scores[%d]>",i1);
+				scores[i1] = Integer.parseInt(jt2.getText());
+			}
+		}
+		
+	}
+
+}
+
+public class hall {
+
+	public static void main(String[] args) {
+		new MyFrame1();
+
+	}
+
+}

@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class ArrayTest {
+
+	
+	public static void main(String[] args) {
+		String[] names;
+		int[] score;
+		String[] grade;
+		int count;
+		
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("학생수 입력");
+		count = Integer.parseInt(sc.nextLine());
+		/*
+		names = new String[count];
+		score = new int[count];
+		grade = new String[count];
+		*/
+		for(int i=0; i<count; i++) {
+			System.out.println("학생이름 입력");
+			names[i] = sc.nextLine();
+			System.out.println("성적 입력");
+			score[i] = Integer.parseInt(sc.nextLine());
+			System.out.println("학생이름 입력");
+			grade[i] = sc.nextLine();
+			
+		}
+		
+		
+		for(int i=0; i<names.length; i++) {
+		
+		
+	}
+
+}

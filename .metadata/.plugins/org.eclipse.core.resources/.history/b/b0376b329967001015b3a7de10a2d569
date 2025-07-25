@@ -1,0 +1,12 @@
+
+public class Ex001 {
+	
+	public void main2() {
+	int x;
+	}
+	public static void main(String arg[]) {
+		int x = 100;
+		System.out.println(x);
+		System.out.println(x+100);
+	}
+}

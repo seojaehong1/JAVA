@@ -1,0 +1,54 @@
+package _20250725;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import com.mysql.cj.protocol.Resultset;
+
+public class jdbcTest {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		String id = "spring5";
+		String pw = "spring5";
+		String url = "jdbc:mysql://localhost:3305/spring5fs";
+		Connection con = null;
+		String sql ="select empno, ename, job, hredate from emp";
+		
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		System.out.println("클래스 있다.");
+		
+		
+		con = DriverManager.getConnection(url, id, pw);
+		System.out.println("\n접속 성공");
+		
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(sql);
+		
+		System.out.println("\n사번\t이름\t직무");
+		System.out.println("--------------------\n");
+		while(rs.next()) {
+		String ename = rs.getString("ename");
+		String job = rs.getString("job");
+		int empno = rs.getInt("empno");
+		String str = rs.getString(5);
+		System.out.printf("%d\t%s\t%s\t%s \n",empno,ename, job, str);
+		}
+		
+		rs.close();
+		stmt.close();
+		con.close();
+		
+		/*	try {
+			Class.forName("com.mysql.cj.jdbc");
+			System.out.println("클래스 있다.");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			System.out.println("클래스 없다.");
+		} */
+		
+	}
+
+}

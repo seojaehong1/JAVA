@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ArrayTest {
+
+	
+	public static void main(String[] args) {
+		
+		int score[] = new int[3];
+		Scanner sc = new Scanner(System.in);
+		int sum = 0;
+		int everage = 0;
+		
+		for (int i=0; i<3; i++) {
+			System.out.println(i+1+"번째 점수 입력");
+			String inputData1 = sc.nextLine();
+			score[i] = Integer.parseInt(inputData1);
+		}
+		for (int j=0; j<score.length; j++) {
+			System.out.println(j+"번째 점수는"+score[j]);
+		}
+		/*
+		for (int a=0; a<score.length; a++) {
+			
+			sum += Integer.parseInt(score[a]);
+		}*/
+	}
+
+}

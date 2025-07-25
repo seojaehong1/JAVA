@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class ArrayTest {
+
+	public static String method(int score) {
+		String grade;
+		switch(score/10) {
+		case 10:
+		case 9:
+			grade = ("A");
+			break;
+		case 8:
+			grade =("B");
+			break;
+		case 7:
+			grade =("C");
+			break;
+		default:
+			grade =("F");
+			break;
+		}
+		return grade;
+	}
+	public static void main(String[] args) {
+		String[] names;
+		int[] score;
+		String[] grade;
+		int count;
+		
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("학생수 입력");
+		count = Integer.parseInt(sc.nextLine());
+		names = new String[count];
+		score = new int[count];
+		grade = new String[count];
+		
+		for(int i=0; i<count; i++) {
+			System.out.printf("학생(%d)이름 입력",i+1);
+			names[i] = sc.nextLine();
+			System.out.printf("성적(%d)입력",i+1);
+			score[i] = Integer.parseInt(sc.nextLine());
+			grade[i] = method(score[i]);
+			System.out.printf("성적은 %s\n", grade[i]);
+		}
+		
+		
+
+	}
+	
+}
