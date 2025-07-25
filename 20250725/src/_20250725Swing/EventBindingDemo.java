@@ -7,11 +7,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class MyFrame extends JFrame {
+public class EventBindingDemo extends JFrame {
 	
 	JButton jb1 = new JButton("확인");
 	
-	public MyFrame() {
+	public EventBindingDemo() {
 		
 		Container con = this.getContentPane();
 		con.setLayout(null);
@@ -35,7 +35,7 @@ public class MyFrame extends JFrame {
 
 	public static void main(String[] args) {
 		
-		new MyFrame();
+		new EventBindingDemo();
 		
 	}
 

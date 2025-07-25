@@ -21,7 +21,7 @@ class Emp {
 	
 }
 
-public class thief {
+public class EmpSalarySwapper {
 	
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {

@@ -9,14 +9,14 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
-public class gugu extends JFrame implements ActionListener{
+public class MultipleOfThreeGame extends JFrame implements ActionListener{
 	
 	int count = 1;
 	JButton jb1 = new JButton("확인");
 	JButton jb2 = new JButton("다음");
 	JLabel lab2 = new JLabel("숫자: " + count);
 	
-	public gugu() {
+	public MultipleOfThreeGame() {
 		
 		Container con = this.getContentPane();
 		con.setLayout(null);
@@ -65,7 +65,7 @@ public class gugu extends JFrame implements ActionListener{
 
 	public static void main(String[] args) {
 		
-		new gugu();
+		new MultipleOfThreeGame();
 		
 	}
 

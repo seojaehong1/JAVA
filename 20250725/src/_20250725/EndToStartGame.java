@@ -3,7 +3,7 @@ package _20250725;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class sss {
+public class EndToStartGame {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String firstword[] = new String[5];
