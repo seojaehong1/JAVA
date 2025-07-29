@@ -1,0 +1,6 @@
+package _20250728;
+
+public enum Day {
+	MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY,
+	SUNDAY
+}
