@@ -6,7 +6,7 @@ public class TryCatchEx2 {
 		String[] arr = {"홍길동","김자바"};
 		
 		try {
-			Integer.parseInt("1");
+			Integer.parseInt("");
 			System.out.println(arr[2]);
 		
 		}catch(NumberFormatException e) {
