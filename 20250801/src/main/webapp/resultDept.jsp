@@ -28,7 +28,7 @@ try {
     Class.forName("com.mysql.cj.jdbc.Driver");
     conn = DriverManager.getConnection("jdbc:mysql://localhost:3305/spring5fs", "root", "1234");
     stmt = conn.createStatement();
-    if()
+    
     rs = stmt.executeQuery("SELECT * FROM dept where deptno = " + deptno);
     
 %>

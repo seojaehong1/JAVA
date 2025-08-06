@@ -23,6 +23,21 @@
     <fullyQualifiedTypeName name="_20250730.HankookTire"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="sec03.verify.HttpServlet"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="sec01.exam04.RemoteControl"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.Iterable"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.batch.Main"/>
+    <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.batch.Main.ResourceBundleFactory"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="dp.decorator.ExeTimeCalulator"/>
+    <fullyQualifiedTypeName name="dp.decorator.ImpeCalculator"/>
+    <fullyQualifiedTypeName name="dp.decorator.RecCalcurator"/>
+    <fullyQualifiedTypeName name="dp.templateMethod.AbstractDisplay"/>
+    <fullyQualifiedTypeName name="sec01.exam01.A.B"/>
 </qualifiedTypeNameHistroy>
