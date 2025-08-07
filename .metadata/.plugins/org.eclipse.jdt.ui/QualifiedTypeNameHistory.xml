@@ -18,7 +18,6 @@
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="_20250729.Calculator"/>
     <fullyQualifiedTypeName name="sec06.exam02.kumho.Tire"/>
-    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
     <fullyQualifiedTypeName name="_20250730.ChildExample"/>
     <fullyQualifiedTypeName name="_20250730.HankookTire"/>
     <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
@@ -40,4 +39,17 @@
     <fullyQualifiedTypeName name="dp.decorator.RecCalcurator"/>
     <fullyQualifiedTypeName name="dp.templateMethod.AbstractDisplay"/>
     <fullyQualifiedTypeName name="sec01.exam01.A.B"/>
+    <fullyQualifiedTypeName name="sec01.exam05.Outter.Nested"/>
+    <fullyQualifiedTypeName name="nested.A1.B"/>
+    <fullyQualifiedTypeName name="sec01.exam06.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="sec01.exam06.CallListener"/>
+    <fullyQualifiedTypeName name="sec01.exam06.MessageListener"/>
+    <fullyQualifiedTypeName name="sec02.exam02.Anonymous"/>
+    <fullyQualifiedTypeName name="sec02.exam02.RemoteControl"/>
+    <fullyQualifiedTypeName name="sec02.exam02.Button.OnClickListener"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="ramda.MyFunctionalInterface"/>
+    <fullyQualifiedTypeName name="java.awt.Container"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.WindowListener"/>
 </qualifiedTypeNameHistroy>

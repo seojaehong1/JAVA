@@ -36,7 +36,7 @@ try {
         out.println("리소스를 닫는 도중 오류 발생: " + e.getMessage());
     }
 }
-response.sendRedirect("index.jsp");
+response.sendRedirect("show.jsp");
 %>
 </body>
 </html>
