@@ -40,23 +40,23 @@ try {
  %>
  <tr>
         <th>제목</th>
-        <td><input type="text" name="content" value= "<%=title %>"/></td>
+        <td><input type="text" name="title" value= "<%= title %>"/></td>
     </tr>
     <tr>
         <th>작성자</th>
-        <td><input type="text" name="content" value="<%=writer %>"/></td>
+        <td><input type="text" name="writer" value="<%= writer %>"/></td>
     </tr>
     <tr>
         <th>작성일시</th>
-        <td><input type="text" name="content" value="<%=regtime %>"/></td>
+        <td><input type="text" name="regtime" value="<%= regtime %>"/></td>
     </tr>
     <tr>
         <th>조회수</th>
-        <td><input type="text" name="content" value="<%=hits %>"/></td>
+        <td><input type="text" name="hits" value="<%= hits %>"/></td>
     </tr>
     <tr>
         <th>내용</th>
-        <td><input type="text" name="content" value="<%=content%>"/></td>
+        <td><input type="text" name="content" value="<%= content%>"/></td>
     </tr>
 <%}
     } catch (SQLException e) {

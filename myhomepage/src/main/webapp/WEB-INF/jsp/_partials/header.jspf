@@ -1,0 +1,41 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!-- Tailwind CDN (간편용) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  // 다크모드 토글
+  function toggleTheme(){
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+  }
+  // 초기 로드 시 저장값 적용
+  (function(){
+    const saved = localStorage.getItem('theme');
+    if(saved === 'dark'){ document.documentElement.classList.add('dark'); }
+  })();
+</script>
+
+<!-- 전역 스타일 보정 -->
+<style>
+  html { scroll-behavior: smooth; }
+  .container { max-width: 1000px; }
+</style>
+
+<!-- 헤더 -->
+<header class="border-b bg-white/70 dark:bg-zinc-900/70 backdrop-blur sticky top-0 z-50">
+  <div class="container mx-auto px-5 py-4 flex items-center justify-between">
+    <a href="<c:url value='/'/>" class="text-xl font-bold tracking-tight dark:text-white">
+      seh.dev<span class="text-indigo-500">()</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="<c:url value='/'/>" class="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600">Home</a>
+      <a href="#projects" class="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600">Projects</a>
+      <a href="#about" class="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600">About</a>
+      <a href="#contact" class="text-zinc-700 dark:text-zinc-300 hover:text-indigo-600">Contact</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button onclick="toggleTheme()" class="px-3 py-1.5 rounded-xl border text-sm hover:bg-zinc-50 dark:hover:bg-zinc-800 dark:text-zinc-200">
+        Toggle 🌗
+      </button>
+    </div>
+  </div>
+</header>

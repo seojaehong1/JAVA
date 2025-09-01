@@ -1,5 +1,7 @@
 package _20250721;
 
+import java.util.Scanner;
+
 public class LongTest {
 
 	public static void main(String[] args) {
