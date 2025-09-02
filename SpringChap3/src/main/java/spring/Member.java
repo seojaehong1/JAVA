@@ -37,6 +37,14 @@ public class Member {
 		this.registerDateTime = registerDateTime;
 	}
 	
+	
+	
+	public LocalDateTime getRegisterDateTime() {
+		return registerDateTime;
+	}
+	public void setRegisterDateTime(LocalDateTime registerDateTime) {
+		this.registerDateTime = registerDateTime;
+	}
 	public void changePassword(String oldPassword, String newPassword) {
 		if(!password.equals(oldPassword))
 			throw new WrongIdPasswordException();
