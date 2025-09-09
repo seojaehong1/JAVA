@@ -8,8 +8,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MainForSpring {
+	private static ApplicationContext ctx = null;
 
 	public static void main(String[] args) throws IOException {
+		ctx = new AnnotationConfigApplicationContext(AppCtx.class);
 		BufferedReader reader = 
 				new BufferedReader(new InputStreamReader(System.in));
 		while (true) {
@@ -31,7 +33,6 @@ public class MainForSpring {
 	}
 
 //	private static Assembler assembler = new Assembler();
-	private static ApplicationContext ctx = new AnnotationConfigApplicationContext(AppCtx.class);
 
 	private static void processNewCommand(String[] arg) {
 		if (arg.length != 5) {
