@@ -17,8 +17,9 @@ public class Main {
 //		Member member = dao.selectByEmail1("wtme3@naver.com");
 //		System.out.println(member);
 		
-		Member member2 = dao.selectByEmail2("wtme3@naver.com11");
-		System.out.println(member2);
+//		Member member2 = dao.selectByEmail2("wtme3@naver.com11");
+//		System.out.println(member2);
+		
 		
 		
 	}
