@@ -14,20 +14,30 @@ public class HelloController {
 	@Autowired
 	private MemberDao memberDao;
 	
-	@GetMapping("/search")
+	@GetMapping("/11")
 	public String search(String email) {
 		Member member = memberDao.selectByEmail(email);
 		System.out.println(member);
-		return "result";
+		return "main";
 	}
 	
-	@GetMapping("/allsearch")
+	@GetMapping("/")
 	public String main(Model model) {
 		System.out.println(memberDao.selectAll());
 		model.addAttribute("list", memberDao.selectAll());
-		return "result";
+		return "main";
 	}
 	
+	@GetMapping("/insertForm")
+	public String insertForm(Model model) {		
+		return "insertForm";
+	}
+	
+	@GetMapping("/insert")
+	public String insert(String name, String email, String password, String regdate) {
+		System.out.println(name+","+email+","+password+","+regdate);
+		return "insertOk";
+	}
 	
 	
 }
