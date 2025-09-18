@@ -1,1 +1,15 @@
 /.metadata/
+# 컴파일된 파일
+*.class
+*.jar
+*.war
+
+# 빌드 폴더
+target/
+build/
+out/
+
+# IDE 설정
+.idea/
+*.iml
+.vscode/
